@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\MyPlayer.cs" />
     <Compile Include="Assets\cam.cs" />
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
+    <Compile Include="Assets\Scripts\RelativeMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />

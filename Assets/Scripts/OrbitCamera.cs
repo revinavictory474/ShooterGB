@@ -6,9 +6,9 @@ public class OrbitCamera : MonoBehaviour
 {
     [SerializeField] private Transform target;
 
-    public float rotSpeed = 1.5f;
+    public float rotSpeed = 1.1f;
     private float _rotY;
-    private float _speedMouse = 3;
+    private float _speedMouse = 2;
     private Vector3 _offset;
 
     private void Start()
@@ -20,7 +20,7 @@ public class OrbitCamera : MonoBehaviour
     private void LateUpdate()
     {
         float horInput = Input.GetAxis("Horizontal");
-        if(horInput != 0)
+        if (horInput != 0)
         {
             _rotY += horInput * rotSpeed;
         }
