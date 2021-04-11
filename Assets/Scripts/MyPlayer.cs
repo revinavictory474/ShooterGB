@@ -17,11 +17,8 @@ public class MyPlayer : MonoBehaviour, iTakeDamage, iHealth
     [SerializeField] private float rotationSpeed = 0.8f;
     [SerializeField] private int damage = 10;
 
-    private Rigidbody rigidbody;
     Vector3 direction = Vector3.zero;
     private AudioSource audioSource = null;
-
-
 
     [Header("Bullet")]
     [SerializeField] private float reloadTime = 1.0f;
@@ -49,7 +46,6 @@ public class MyPlayer : MonoBehaviour, iTakeDamage, iHealth
     {
         currentHp = maxHp;
         healthBar.SetMaxHealth(maxHp);
-        rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -115,8 +111,5 @@ public class MyPlayer : MonoBehaviour, iTakeDamage, iHealth
             currentHp += hp;
         }
     }
-
-    
-
 }
 
