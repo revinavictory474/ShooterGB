@@ -14,7 +14,7 @@ public class MyPlayer : MonoBehaviour, iTakeDamage, iHealth
     [SerializeField] public int maxHp;
     [SerializeField] public float speed = 9f;
     [SerializeField] private float jumpForce = 300f;
-    [SerializeField] private float rotationSpeed = 1f;
+    [SerializeField] private float rotationSpeed = 0.8f;
     [SerializeField] private int damage = 10;
 
     private Rigidbody rigidbody;
