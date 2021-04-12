@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\MyEnemy.cs" />
     <Compile Include="Assets\Scripts\Controller\HealthPlus.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
-    <Compile Include="Assets\Scripts\TestMatch.cs" />
     <Compile Include="Assets\Scripts\WaypointsPatrol.cs" />
     <Compile Include="Assets\Scripts\Interface\iTakeDamage.cs" />
     <Compile Include="Assets\Scripts\Mine.cs" />
@@ -75,8 +74,10 @@
     <Compile Include="Assets\cam.cs" />
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
-    <Compile Include="Assets\Scripts\View\BulletView.cs" />
+    <Compile Include="Assets\Scripts\Model\BulletModel.cs" />
     <Compile Include="Assets\Scripts\Controller\BulletPlayer.cs" />
+    <Compile Include="Assets\Scripts\Model\Player.cs" />
+    <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />

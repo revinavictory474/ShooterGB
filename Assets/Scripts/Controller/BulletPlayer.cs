@@ -2,25 +2,10 @@
 using UnityEngine;
 
 
-public class BulletPlayer : MonoBehaviour
+public class BulletPlayer : BulletModel
 {
     [SerializeField] private int damage = 10;
-    private int force = 50;
-    private int timeLive = 1000;
-    private int currentTimme;
-
-    public void Init()
-    {
-        GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force, ForceMode.Impulse);
-        GetComponent<Rigidbody>().AddRelativeTorque(Vector3.forward * force, ForceMode.Impulse);
-    }
-
-    private void Update()
-    {
-        if (currentTimme < timeLive) currentTimme++;
-        else Destroy(this.gameObject);
-    }
-
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))

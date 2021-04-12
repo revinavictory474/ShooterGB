@@ -57,8 +57,8 @@ public class Turet : MonoBehaviour, iTakeDamage
 
             if (!timer.Enabled)
             {
-                //var createBullet = Instantiate(bullet, bulletPosition.position, Quaternion.identity).GetComponent<Bullet>();
-                //createBullet.Init();
+                var createBullet = Instantiate(bullet, bulletPosition.position, Quaternion.identity).GetComponent<BulletEnemy>();
+                createBullet.Init();
                 timer.Enabled = true;
             }
         }

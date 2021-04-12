@@ -12,8 +12,8 @@ public class MyEnemy : MonoBehaviour, iTakeDamage
     [SerializeField] private Transform dist; 
     [SerializeField] private float speed = 1;
     [SerializeField] private Animator animator;
-    private float currentReloadTime = 0;
     [SerializeField] private float reloadTime = 1.0f;
+    public float hpPlayer;
     public bool IsDead { get; private set; }
 
 
@@ -24,7 +24,7 @@ public class MyEnemy : MonoBehaviour, iTakeDamage
     void Start()
     {
         IsDead = false;
-        var pHp = MyPlayer.myPlayer.currentHp;
+        hpPlayer = Player.myPlayer.currentHp;
         animator = GetComponent<Animator>();
     }
 

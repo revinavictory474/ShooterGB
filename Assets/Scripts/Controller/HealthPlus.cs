@@ -6,7 +6,14 @@ public class HealthPlus : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<iHealth>().Health(25);
-        Destroy(gameObject);
+        if (CompareTag("Player"))
+        {
+            other.GetComponent<iHealth>().Health(25);
+            Destroy(gameObject);
+        }
+        else
+        {
+            return;
+        }
     }
 }

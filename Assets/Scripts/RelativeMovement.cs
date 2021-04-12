@@ -6,27 +6,30 @@ using UnityEngine;
 public class RelativeMovement : MonoBehaviour
 {
     [SerializeField] private Transform target;
-
+    protected Vector3 movement;
     public float rotSpeed = 10.0f;
     public float moveSpeed = 6.0f;
     public float jumpSpeed = 15.0f;
     public float gravity = -9.8f;
     public float terminalVelocity = -10.0f;
     public float minFall = -1.5f;
-    private float _vertSpeed;
-    private CharacterController _characterController;
-    private ControllerColliderHit _contact;
+    protected float _vertSpeed;
+    public CharacterController _characterController;
+    public ControllerColliderHit _contact;
 
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
         _vertSpeed = minFall;
     }
-
     private void Update()
     {
-        Vector3 movement = Vector3.zero;
-
+        MovementLogic();
+        JumpAndFallLogic();
+    }
+    public void MovementLogic()
+    {
+        movement = Vector3.zero;
         float horInput = Input.GetAxis("Horizontal");
         float verInput = Input.GetAxis("Vertical");
         if (horInput != 0 || verInput != 0)
@@ -43,7 +46,9 @@ public class RelativeMovement : MonoBehaviour
             Quaternion direction = Quaternion.LookRotation(movement);
             transform.rotation = Quaternion.Lerp(transform.rotation, direction, rotSpeed * Time.deltaTime);
         }
-
+    }
+    public void JumpAndFallLogic()
+    {
         bool hitGround = false;
         RaycastHit hit;
         if (_vertSpeed < 0 && Physics.Raycast(transform.position, Vector3.down, out hit))
@@ -77,8 +82,8 @@ public class RelativeMovement : MonoBehaviour
 
         movement *= Time.deltaTime;
         _characterController.Move(movement);
-
     }
+
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         _contact = hit;
