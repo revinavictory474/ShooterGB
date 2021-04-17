@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EndGAme.cs" />
+    <Compile Include="Assets\Scripts\Controller\BulletPlayer.cs" />
     <Compile Include="Assets\Scripts\RelativeMovement.cs" />
     <Compile Include="Assets\Scripts\Turet.cs" />
     <Compile Include="Assets\Scripts\SlideHealth.cs" />
@@ -75,9 +76,10 @@
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\Model\BulletModel.cs" />
-    <Compile Include="Assets\Scripts\Controller\BulletPlayer.cs" />
-    <Compile Include="Assets\Scripts\Model\Player.cs" />
-    <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerHP.cs" />
+    <Compile Include="Assets\Scripts\PlayerMine.cs" />
+    <Compile Include="Assets\NewBehaviourScript1.cs" />
+    <Compile Include="Assets\Scripts\PlayerShot.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />
