@@ -57,7 +57,11 @@ public class Turet : MonoBehaviour, iTakeDamage
 
             if (!timer.Enabled)
             {
+<<<<<<< HEAD
                 var createBullet = Instantiate(bullet, bulletPosition.position, Quaternion.identity).GetComponent<BulletEnemy>();
+=======
+                var createBullet = Instantiate(bullet, bulletPosition.position, Quaternion.identity).GetComponent<Bullet>();
+>>>>>>> parent of 3780037... V1.1.4
                 createBullet.Init();
                 timer.Enabled = true;
             }
