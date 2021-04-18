@@ -57,13 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EndGAme.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Controller\BulletPlayer.cs" />
     <Compile Include="Assets\Scripts\RelativeMovement.cs" />
-=======
     <Compile Include="Assets\Scripts\BulletPlayer.cs" />
->>>>>>> parent of 3780037... V1.1.4
     <Compile Include="Assets\Scripts\Turet.cs" />
+    <Compile Include="Assets\Scripts\PlayerMine.cs" />
     <Compile Include="Assets\Scripts\SlideHealth.cs" />
     <Compile Include="Assets\Scripts\iHealth.cs" />
     <Compile Include="Assets\Scripts\MaiMenu.cs" />
@@ -73,22 +70,17 @@
     <Compile Include="Assets\Scripts\HealthPlus.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\PlayerHP.cs" />
+    <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\Scripts\WaypointsPatrol.cs" />
+    <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\iTakeDamage.cs" />
     <Compile Include="Assets\Scripts\Mine.cs" />
     <Compile Include="Assets\Scripts\MyPlayer.cs" />
     <Compile Include="Assets\cam.cs" />
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\Model\BulletModel.cs" />
-    <Compile Include="Assets\Scripts\PlayerHP.cs" />
-    <Compile Include="Assets\Scripts\PlayerMine.cs" />
-    <Compile Include="Assets\NewBehaviourScript1.cs" />
-    <Compile Include="Assets\Scripts\PlayerShot.cs" />
-=======
-    <Compile Include="Assets\Scripts\RelativeMovement.cs" />
->>>>>>> parent of 3780037... V1.1.4
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />
