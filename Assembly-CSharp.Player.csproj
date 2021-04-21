@@ -71,7 +71,6 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerHP.cs" />
-    <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\Scripts\WaypointsPatrol.cs" />
     <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\iTakeDamage.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\Model\BulletModel.cs" />
+    <Compile Include="Assets\Scripts\IMove.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />

@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{59A10885-1E02-ABAA-9DD1-AA9F3B67583B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EndGAme.cs" />
+    <Compile Include="Assets\Scripts\IPlayer.cs" />
     <Compile Include="Assets\Scripts\RelativeMovement.cs" />
     <Compile Include="Assets\Scripts\BulletPlayer.cs" />
     <Compile Include="Assets\Scripts\Turet.cs" />
@@ -71,7 +73,6 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerHP.cs" />
-    <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\Scripts\WaypointsPatrol.cs" />
     <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\iTakeDamage.cs" />
@@ -81,10 +82,11 @@
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\Model\BulletModel.cs" />
+    <Compile Include="Assets\Scripts\IMove.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />
-     <None Include="Assets\Sci-Fi Styled Modular Pack\Readme.txt" />
+    <None Include="Assets\Robo's turret (free)\Shaders\SDR_Structures.shader" />
+    <None Include="Assets\Sci-Fi Styled Modular Pack\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>E:\Revina\2020.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

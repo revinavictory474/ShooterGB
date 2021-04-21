@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< HEAD:Assets/Scripts/Controller/BulletPlayer.cs
-
-public class BulletPlayer : BulletModel
-{
-    [SerializeField] private int damage = 10;
-   
-=======
 public class BulletPlayer : MonoBehaviour
 {
     [SerializeField] private int damage = 10;
@@ -23,8 +16,6 @@ public class BulletPlayer : MonoBehaviour
         GetComponent<Rigidbody>().AddRelativeTorque(Vector3.forward * force, ForceMode.Impulse);
     }
 
-
->>>>>>> parent of 3780037... V1.1.4:Assets/Scripts/BulletPlayer.cs
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))

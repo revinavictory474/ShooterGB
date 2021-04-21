@@ -11,8 +11,8 @@ public class MyPlayer : MonoBehaviour
     PlayerShot playerShot;
     PlayerMine playerMine;
 
-<<<<<<< HEAD
-=======
+
+
     #region Properties
     [SerializeField] public int currentHp;
     [SerializeField] public int maxHp;
@@ -41,7 +41,7 @@ public class MyPlayer : MonoBehaviour
 
 
     #endregion
->>>>>>> parent of 3780037... V1.1.4
+
 
     private void Awake()
     {
@@ -50,13 +50,13 @@ public class MyPlayer : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< HEAD
+
         playerHP.SetStartHP();
-=======
+
         currentHp = maxHp;
-        healthBar.SetMaxHealth(maxHp);
+       // healthBar.SetMaxHealth(maxHp);
         rigidbody = GetComponent<Rigidbody>();
->>>>>>> parent of 3780037... V1.1.4
+
     }
     private void Update()
     {
@@ -64,8 +64,7 @@ public class MyPlayer : MonoBehaviour
         playerMine.SetMine();
     }
 
-<<<<<<< HEAD
-=======
+
     public void Death()
     {
         Destroy(gameObject);
@@ -85,6 +84,6 @@ public class MyPlayer : MonoBehaviour
 
     
 
->>>>>>> parent of 3780037... V1.1.4
+
 }
 
