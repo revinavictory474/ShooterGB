@@ -4,86 +4,46 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 
-public class MyPlayer : MonoBehaviour
+public class MyPlayer : MonoBehaviour, IPlayer
 {
-    public static MyPlayer myPlayer;
-    PlayerHP playerHP;
-    PlayerShot playerShot;
-    PlayerMine playerMine;
+    private float _rotSpeed = 10.0f;
+    private float _moveSpeed = 6.0f;
 
+    private JumpPlayer jumpPlayer;
+    public int Hp { get ; set; }
+    private IWeapon _weapon { get; set; }
+    private IMove _movement;
+    private IJump _jumpAndFall;
 
-
-    #region Properties
-    [SerializeField] public int currentHp;
-    [SerializeField] public int maxHp;
-    [SerializeField] public float speed = 9f;
-    [SerializeField] private float jumpForce = 300f;
-    [SerializeField] private float rotationSpeed = 0.8f;
-    [SerializeField] private int damage = 10;
-
-    private Rigidbody rigidbody;
-    Vector3 direction = Vector3.zero;
-    private AudioSource audioSource = null;
-
-
-
-    [Header("Bullet")]
-    [SerializeField] private float reloadTime = 1.0f;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private Transform bulletStartPosition;
-
-    [Header("Mine")]
-    [SerializeField] private GameObject mine;
-    [SerializeField] private int mineCount = 3;
-    [SerializeField] private Transform mineStartPosition;
-
-    private float currentReloadTime = 0;
-
-
-    #endregion
-
-
-    private void Awake()
+    public MyPlayer(int hp, IWeapon weapon, IMove move, IJump jump)
     {
-        playerHP.SetAwakeHP();
+        Hp = hp;
+        _weapon = weapon;
+        _movement = move;
+        _jumpAndFall = jump;
     }
-
+    
     private void Start()
     {
-
-        playerHP.SetStartHP();
-
-        currentHp = maxHp;
-       // healthBar.SetMaxHealth(maxHp);
-        rigidbody = GetComponent<Rigidbody>();
-
+        var movementLogic = new MovementPlayer(transform, _moveSpeed, _rotSpeed);
+        jumpPlayer._characterController = GetComponent<CharacterController>();
+        jumpPlayer._vertSpeed = jumpPlayer.MinFall;
     }
+
     private void Update()
     {
-        playerShot.Shot();
-        playerMine.SetMine();
+        
     }
 
-
-    public void Death()
+    public void Move()
     {
-        Destroy(gameObject);
+       _movement.Move();
     }
 
-    public void Health(int hp)
+    public void Jump()
     {
-        if (hp + currentHp >= maxHp)
-        {
-            currentHp = maxHp;
-        }
-        else
-        {
-            currentHp += hp;
-        }
+        _jumpAndFall.Jump();
     }
-
-    
-
 
 }
 

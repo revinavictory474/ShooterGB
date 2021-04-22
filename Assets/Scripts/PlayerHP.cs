@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 class PlayerHP : iHealth, iTakeDamage
 {
     public static PlayerHP playerHP;
-    MyPlayer myPlayer;
     public SlideHealth healthBar;
 
     public int currentHp;
@@ -16,8 +15,6 @@ class PlayerHP : iHealth, iTakeDamage
     public void SetAwakeHP()
     {
         maxHp = 100;
-        MyPlayer player = new MyPlayer();
-        myPlayer = player;
     }
 
     public void SetStartHP()

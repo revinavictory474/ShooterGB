@@ -1,21 +1,8 @@
-﻿using System.Collections;
-using UnityEngine;
-
-namespace Assets.Scripts
+﻿
+public interface IPlayer
 {
-    public class IPlayer : MonoBehaviour
-    {
-
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-    }
+    int Hp { get; set; }
+    IWeapon Weapon { get; set; }
+    IMove Move();
+    IJump Jump();
 }
