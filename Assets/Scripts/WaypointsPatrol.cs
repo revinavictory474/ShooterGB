@@ -7,14 +7,14 @@ public class WaypointsPatrol : MonoBehaviour
 {
     public NavMeshAgent nawMeshAgent;
     public Transform[] waypoints;
-    public MyEnemy enemy;
+    public Enemy enemy;
 
     int currentWaypointIndex;
 
     private void Start()
     {
         nawMeshAgent.SetDestination(waypoints[0].position);
-        enemy = GetComponent<MyEnemy>();
+        enemy = GetComponent<Enemy>();
     }
 
     private void Update()

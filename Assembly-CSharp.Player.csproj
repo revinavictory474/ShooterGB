@@ -66,7 +66,7 @@
     <Compile Include="Assets\Scripts\MaiMenu.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\Scripts\OrbitCamera.cs" />
-    <Compile Include="Assets\Scripts\MyEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\HealthPlus.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
@@ -75,7 +75,7 @@
     <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\iTakeDamage.cs" />
     <Compile Include="Assets\Scripts\Mine.cs" />
-    <Compile Include="Assets\Scripts\MyPlayer.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\cam.cs" />
     <Compile Include="Assets\Scripts\PausedMenu.cs" />
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
@@ -86,6 +86,11 @@
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\IJump.cs" />
     <Compile Include="Assets\Scripts\MovementPlayer.cs" />
+    <Compile Include="Assets\Scripts\IPlayerFactory.cs" />
+    <Compile Include="Assets\Scripts\PlayerFactory.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\NameManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyPool.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />

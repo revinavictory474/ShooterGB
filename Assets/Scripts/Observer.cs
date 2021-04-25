@@ -6,7 +6,7 @@ using UnityEngine;
 public class Observer : MonoBehaviour
 {
     public Transform player;
-    public MyEnemy enemy;
+    public Enemy enemy;
     //public GameEnding gameEnding;
 
     bool isPlayerInRange;
