@@ -1,5 +1,5 @@
 ﻿
 public interface IPlayerFactory
 {
-    Player Create();
+    IPlayer CreatePlayer(int hp);
 }

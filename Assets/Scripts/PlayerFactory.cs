@@ -3,9 +3,17 @@
 
 public class PlayerFactory : IPlayerFactory
 {
-    public Player Create()
+    private readonly IWeapon _weapon;
+    private readonly IMove _move;
+
+    public PlayerFactory(IWeapon weapon, IMove move)
     {
-        var player = Object.Instantiate(Resources.Load<Player>("Player"));
-        return player;
+        _weapon = weapon;
+        _move = move;
+    }
+
+    public IPlayer CreatePlayer(int hp)
+    {
+        return new Player(hp, _weapon, _move);
     }
 }

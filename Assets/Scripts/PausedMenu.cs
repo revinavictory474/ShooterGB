@@ -34,8 +34,8 @@ public class PausedMenu : MonoBehaviour
 
     private void Start()
     {
-        pausePanel.SetActive(false);
-        isLock = true;
+        //pausePanel.SetActive(false);
+        //isLock = true;
     }
 
     private void Update()

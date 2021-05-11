@@ -23,9 +23,9 @@ public class Enemy : MonoBehaviour, iTakeDamage
     }
     void Start()
     {
-        IsDead = false;
-        hpPlayer = PlayerHP.playerHP.currentHp;
-        animator = GetComponent<Animator>();
+        //IsDead = false;
+        //hpPlayer = PlayerHP.playerHP.currentHp;
+        //animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int dam)

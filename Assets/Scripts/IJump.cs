@@ -5,5 +5,4 @@
     public float Gravity { get; }
     public float TerminalVelocity { get; }
     public float MinFall { get; }
-    void Jump();
 }

@@ -12,8 +12,8 @@ public class JumpPlayer : IJump
     private float _terminalVelocity = -10.0f;
     private float _minFall = -1.5f;
     public float _vertSpeed;
-    public CharacterController _characterController;
-    public ControllerColliderHit _contact;
+    public CharacterController characterController;
+    public ControllerColliderHit contact;
     #endregion
 
     #region Properties
@@ -30,40 +30,40 @@ public class JumpPlayer : IJump
         RaycastHit hit;
         if (_vertSpeed < 0 && Physics.Raycast(_transform.position, Vector3.down, out hit))
         {
-            float check = (_characterController.height + _characterController.radius) / 1.9f;
+            float check = (characterController.height + characterController.radius) / 1.9f;
             hitGround = hit.distance <= check;
         }
 
         if (hitGround)
         {
             if (Input.GetButtonDown("Jump"))
-                _vertSpeed = _jumpSpeed;
+                _vertSpeed = JumpSpeed;
             else
-                _vertSpeed = _minFall;
+                _vertSpeed = MinFall;
         }
         else
         {
-            _vertSpeed += _gravity * 5 * Time.deltaTime;
-            if (_vertSpeed < _terminalVelocity)
-                _vertSpeed = _terminalVelocity;
-            if (_characterController.isGrounded)
+            _vertSpeed += Gravity * 5 * Time.deltaTime;
+            if (_vertSpeed < TerminalVelocity)
+                _vertSpeed = TerminalVelocity;
+            if (characterController.isGrounded)
             {
-                if (Vector3.Dot(_movement, _contact.normal) < 0)
-                    _movement = _contact.normal * _moveSpeed;
+                if (Vector3.Dot(_movement, contact.normal) < 0)
+                    _movement = contact.normal * MoveSpeed;
                 else
-                    _movement += _contact.normal * _moveSpeed;
+                    _movement += contact.normal * MoveSpeed;
             }
         }
 
         _movement.y = _vertSpeed;
 
         _movement *= Time.deltaTime;
-        _characterController.Move(_movement);
+        characterController.Move(_movement);
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        _contact = hit;
+        contact = hit;
     }
 
 }

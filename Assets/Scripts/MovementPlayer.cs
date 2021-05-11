@@ -4,9 +4,10 @@
 public class MovementPlayer : IMove
 {
     #region Fields
-    [SerializeField] private Transform target;
-    protected Transform _transform;
+    private Transform target;
+    public Transform _transform;
     protected Vector3 _movement;
+    public CharacterController _characterController;
     #endregion
 
     #region Properties
@@ -15,12 +16,15 @@ public class MovementPlayer : IMove
     #endregion
 
 
-    public MovementPlayer(Transform transform, float speed, float speedRotate)
+    public MovementPlayer(Transform transform, float speed, float speedRotate, Transform cameraTransform, CharacterController characterController)
     {
         _transform = transform;
         Speed = speed;
         SpeedRotate = speedRotate;
+        target = cameraTransform;
+        _characterController = characterController;
     }
+
 
     public void Move()
     {
@@ -29,8 +33,9 @@ public class MovementPlayer : IMove
         float verInput = Input.GetAxis("Vertical");
         if (horInput != 0 || verInput != 0)
         {
-            _movement.x = horInput * Speed;
             _movement.z = verInput * Speed;
+            _movement.x = horInput * Speed;
+            Debug.Log(_movement.z);
             _movement = Vector3.ClampMagnitude(_movement, Speed);
 
             Quaternion tmp = target.rotation;
@@ -40,6 +45,9 @@ public class MovementPlayer : IMove
 
             Quaternion direction = Quaternion.LookRotation(_movement);
             _transform.rotation = Quaternion.Lerp(_transform.rotation, direction, SpeedRotate * Time.deltaTime);
+
+            _movement *= Time.deltaTime;
+            _characterController.Move(_movement);
         }
     }
 }
