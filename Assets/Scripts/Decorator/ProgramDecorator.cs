@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ProgramDecorator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        Client client = new Client();
+
+        var simple = new ConcreteComponent();
+        Debug.Log("Простой компонент");
+        client.ClientCode(simple);
+
         
+        ConcreteDecorator decorator = new ConcreteDecorator(simple);
+        Debug.Log("Декорированый компонент");
+        client.ClientCode(decorator);
     }
 }

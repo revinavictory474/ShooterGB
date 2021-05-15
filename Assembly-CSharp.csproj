@@ -99,6 +99,9 @@
     <Compile Include="Assets\Scripts\Decorator\Decorator.cs" />
     <Compile Include="Assets\Scripts\Decorator\Client.cs" />
     <Compile Include="Assets\Scripts\Decorator\ProgramDecorator.cs" />
+    <Compile Include="Assets\Scripts\Decorator\Component.cs" />
+    <Compile Include="Assets\Scripts\Decorator\ConcreteDecorator.cs" />
+    <Compile Include="Assets\Scripts\Decorator\ConcreteComponent.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />
