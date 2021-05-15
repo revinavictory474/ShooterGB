@@ -16,10 +16,10 @@ public class ProgramPrototype : MonoBehaviour
 
         Person person2 = person1.DeepCopy();
 
-        Console.WriteLine("person1");
+        Debug.Log("person1");
         DisplayValues(person1);
 
-        Console.WriteLine("person2");
+        Debug.Log("person2");
         DisplayValues(person2);
 
 
@@ -29,18 +29,17 @@ public class ProgramPrototype : MonoBehaviour
         person1.IdInfo.IdNumber = 666;
 
 
-        Console.WriteLine("person1");
+        Debug.Log("person1");
         DisplayValues(person1);
 
-        Console.WriteLine("person2");
+        Debug.Log("person2");
         DisplayValues(person2);
 
     }
 
     public static void DisplayValues(Person p)
     {
-        Console.WriteLine($"Имя: {0}, Возраст: {1}, Дата рождения: {2}",
-            p.Name, p.Age, p.BirthDate);
-        Console.WriteLine($"Номер: {0}", p.IdInfo.IdNumber);
+        Debug.Log($"Имя: {p.Name}, Возраст: {p.Age}, Дата рождения: {p.BirthDate}");
+        Debug.Log($"Номер: {p.IdInfo.IdNumber}");
     }
 }
