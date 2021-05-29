@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\Decorator\Decorator.cs" />
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
+    <Compile Include="Assets\Scripts\Lesson8\OutputScores.cs" />
     <Compile Include="Assets\Scripts\Decorator\Component.cs" />
     <Compile Include="Assets\Scripts\RelativeMovement.cs" />
     <Compile Include="Assets\Scripts\Decorator\Client.cs" />
@@ -102,7 +103,12 @@
     <Compile Include="Assets\Scripts\Controller\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\Model\BulletModel.cs" />
     <Compile Include="Assets\Scripts\IMove.cs" />
-    <Compile Include="Assets\Scripts\Lesson8\OutputScores.cs" />
+    <Compile Include="Assets\Scripts\Observer\ISubject.cs" />
+    <Compile Include="Assets\Scripts\Observer\IObserver.cs" />
+    <Compile Include="Assets\Scripts\Observer\Subject.cs" />
+    <Compile Include="Assets\Scripts\Observer\Test.cs" />
+    <Compile Include="Assets\Scripts\Observer\ObserverA.cs" />
+    <Compile Include="Assets\Scripts\Observer\ObserverB.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Robo&apos;s turret (free)\Shaders\SDR_Structures.shader" />
