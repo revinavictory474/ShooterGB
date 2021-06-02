@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-public class BulletModel : MonoBehaviour
+public abstract class BulletModel : MonoBehaviour
 {
     private int force = 50;
     private int timeLive = 1000;

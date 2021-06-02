@@ -1,8 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
 public class RelativeMovement : MonoBehaviour
 {
     [SerializeField] private Transform target;
@@ -25,7 +24,7 @@ public class RelativeMovement : MonoBehaviour
     private void Update()
     {
         MovementLogic();
-        JumpAndFallLogic();
+        //JumpAndFallLogic();
     }
     public void MovementLogic()
     {

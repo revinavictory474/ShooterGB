@@ -18,6 +18,7 @@ C# parse time         : 1021ms
 candidates check time : 60ms
 console write time    : 13ms
 
+<<<<<<< HEAD
 [api-updater (non-obsolete-error-filter)] 11.04.2021 20:18:57 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] 
 ----------------------------------
@@ -117,4 +118,176 @@ candidates parse time : 1ms
 C# parse time         : 250ms
 candidates check time : 60ms
 console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 17.04.2021 14:40:13 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1883,0437ms
+moved types parse time: 151ms
+candidates parse time : 18ms
+C# parse time         : 904ms
+candidates check time : 28ms
+console write time    : 10ms
+
+[api-updater (non-obsolete-error-filter)] 17.04.2021 14:40:38 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 465,8388ms
+moved types parse time: 61ms
+candidates parse time : 1ms
+C# parse time         : 387ms
+candidates check time : 111ms
+console write time    : 0ms
+
+=======
+>>>>>>> parent of 3780037... V1.1.4
+[api-updater (non-obsolete-error-filter)] 18.04.2021 17:40:06 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 436,4053ms
+moved types parse time: 78ms
+candidates parse time : 1ms
+C# parse time         : 264ms
+candidates check time : 60ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 18.04.2021 18:03:52 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 381,7648ms
+moved types parse time: 68ms
+candidates parse time : 1ms
+C# parse time         : 253ms
+candidates check time : 69ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 17:37:21 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1550,7301ms
+moved types parse time: 106ms
+candidates parse time : 7ms
+C# parse time         : 1530ms
+candidates check time : 66ms
+console write time    : 8ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 18:58:27 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 731,5501ms
+moved types parse time: 84ms
+candidates parse time : 1ms
+C# parse time         : 801ms
+candidates check time : 92ms
+console write time    : 4ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 18:58:32 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 384,7634ms
+moved types parse time: 95ms
+candidates parse time : 1ms
+C# parse time         : 339ms
+candidates check time : 57ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:09:07 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 157,902ms
+moved types parse time: 69ms
+candidates parse time : 1ms
+C# parse time         : 300ms
+candidates check time : 69ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:10:47 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 212,8703ms
+moved types parse time: 69ms
+candidates parse time : 1ms
+C# parse time         : 306ms
+candidates check time : 58ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:16:18 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 68,9568ms
+moved types parse time: 64ms
+candidates parse time : 1ms
+C# parse time         : 228ms
+candidates check time : 56ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:17:18 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 203,8748ms
+moved types parse time: 127ms
+candidates parse time : 1ms
+C# parse time         : 317ms
+candidates check time : 59ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:17:24 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 82,949ms
+moved types parse time: 73ms
+candidates parse time : 1ms
+C# parse time         : 262ms
+candidates check time : 58ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:17:31 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 105,9349ms
+moved types parse time: 88ms
+candidates parse time : 1ms
+C# parse time         : 242ms
+candidates check time : 57ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:18:47 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 81,9489ms
+moved types parse time: 64ms
+candidates parse time : 10ms
+C# parse time         : 267ms
+candidates check time : 60ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 21.04.2021 19:18:48 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 104,9351ms
+moved types parse time: 67ms
+candidates parse time : 1ms
+C# parse time         : 234ms
+candidates check time : 60ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 25.04.2021 22:15:09 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1641,9905ms
+moved types parse time: 125ms
+candidates parse time : 1ms
+C# parse time         : 996ms
+candidates check time : 43ms
+console write time    : 13ms
+
+[api-updater (non-obsolete-error-filter)] 15.05.2021 13:46:04 : Starting E:/Revina/2020.3.1f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1688,2183ms
+moved types parse time: 176ms
+candidates parse time : 1ms
+C# parse time         : 1148ms
+candidates check time : 39ms
+console write time    : 1ms
 
